@@ -22,6 +22,6 @@ plot(data$Voltage ~ as.POSIXct(data$Date_Time), type = "l", ylab = "Voltage", xl
 plot(as.POSIXct(data$Date_Time),data$Sub_metering_1, type = "l", col = "black",ylab = "Energy sub metering", xlab = "")
 lines(as.POSIXct(data$Date_Time), data$Sub_metering_2, col = "red")
 lines(as.POSIXct(data$Date_Time), data$Sub_metering_3, col = "blue")
-legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lwd = 1, bty = "n")
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lwd = 1, bty = "n", cex = .9)
 plot(data$Global_reactive_power ~ as.POSIXct(data$Date_Time), type = "l", ylab = "Global_reactive_power", xlab = "datetime")
 dev.off()
